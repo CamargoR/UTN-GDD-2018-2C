@@ -54,6 +54,10 @@ namespace PalcoNet.GenerarPublicacion
             {
                 MessageBoxUtil.ShowError("La fila debe tener un maximo de tres caracteres.");
             }
+            else if (cmbTipoUbicacion.SelectedItem == null)
+            {
+                MessageBoxUtil.ShowError("Seleccione un tipo de ubicacion.");
+            }
             else
             {
                 if (rdbFilasAsientos.Checked)
